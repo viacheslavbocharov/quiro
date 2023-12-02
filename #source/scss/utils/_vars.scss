@@ -1,0 +1,40 @@
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+
+:root {
+  --ff: "Work Sans", sans-serif;
+  --html-fs: 1px;
+  
+
+  --Heading-4: 600 24rem / normal var(--ff);
+  --Paragraph: #262626;
+
+  --Link: 400 16rem / normal var(--ff);
+
+  --Input: 400 14rem / notmal var(--ff);
+  --Heading-3: 700 36rem / normal var(--ff);
+  --Button: 600 20rem / normal var(--ff);
+  --Title: 600 20rem / normal var(--ff);
+  --Section-title: 700 48rem / normal var(--ff);
+  --Link-primary: 600 16rem / normal var(--ff);
+
+
+
+
+  --black: #000;
+  --white: #fff;
+  --c-primary: #8842f0;
+  --c-terciary: #f9f1fe;
+  --c-text: #575757;
+
+  --transition: 0.2s all ease-in-out;
+}
+
+html._theme:root {
+  --c-primary: rgb(37, 180, 44);
+}
+
+$--c-primary: var(--c-primary);

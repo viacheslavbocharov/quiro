@@ -1,0 +1,90 @@
+.footer {
+  background: var(--c-terciary);
+
+  &__container {
+    position: relative;
+    padding: 106rem 20rem 81rem 20rem;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    gap: 108rem;
+
+    @include desktop-small {
+      grid-template-columns: 1fr 1fr;
+      gap: 108rem;
+
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+      }
+  }
+  &__brand {
+    max-width: 430px;
+  }
+
+  &__copy{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    bottom: 20rem;
+ 
+
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+  }
+
+  &__col {
+  }
+
+  &__logo {
+    color: var(--Paragraph);
+    font: var(--Heading-4);
+    display: inline-block;
+    margin-bottom: 26rem;
+  }
+
+  &__desc {
+    color: var(--Paragraph);
+    font: var(--Link);
+  }
+}
+
+.footer-info {
+  &__title {
+    color: var(--Paragraph);
+    font: var(--Title);
+    margin-bottom: 9rem;
+  }
+
+  &__value {
+    color: var(--Paragraph);
+    font: var(--Link);
+    display: inline-flex;
+    gap: 16rem;
+
+    a {
+      color: var(--Paragraph);
+    }
+  }
+}
+
+.footer-hours {
+  &__title {
+    color: var(--Paragraph);
+    font: var(--Title);
+    margin-bottom: 2rem;
+  }
+
+  &__value {
+    color: var(--Paragraph);
+    font: var(--Link);
+    margin-top: 15rem;
+  }
+}
