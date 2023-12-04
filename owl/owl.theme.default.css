@@ -36,6 +36,7 @@
 
 .owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: -38px;
+  margin-bottom: 14px;
   z-index: 1;
   position: relative;
 }

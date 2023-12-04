@@ -7,7 +7,7 @@
   position: sticky;
   top: 0;
   z-index: 5;
-  background: var(--white);
+  background: var(--c-background);
 
   &__logo {
     color: var(--Paragraph);
@@ -18,6 +18,10 @@
     position: relative;
     max-width: 278rem;
     width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    
 
     @include desktop-small {
       max-width: 170rem;
@@ -27,20 +31,6 @@
     //display: none;
     //}
 
-    &__backdrop {
-      transform: translateX(0%);
-      display: block;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      transition: var(--transition);
-
-      background-color: red;
-      opacity: 0.5;
-      z-index: 10;
-    }
 
     .material-icons {
       position: absolute;
@@ -53,10 +43,11 @@
     input {
       width: 100%;
       border-radius: 50rem;
-      border: 2rem solid var(--white);
+      border: 2rem solid var(--black);
       background: var(--black);
       padding: 14rem 18rem;
-      padding-right: 30rem;
+      padding-right: 45rem;
+      content: " ";
       //outline: 0;
       //border: 0;
       font: var(--Input);
@@ -64,6 +55,14 @@
       &::placeholder {
         font: var(--Input);
         color: var(--white);
+      }
+      //del "X" in search input
+      //&::-webkit-search-cancel-button {
+       // display: none;
+      //}
+
+      @include tablet {
+        border: 2rem solid var(--white);
       }
     }
   }
@@ -94,7 +93,7 @@
   }
 
   &__a {
-    color: var(--black);
+    color: var(--Paragraph);
     font: var(--Link);
     @include tablet {
       color: var(--white);
@@ -151,13 +150,21 @@
   }
 
   .light-burger {
+    cursor: pointer;
+    display: none;
     position: absolute;
     left: 40rem;
     top: 40rem;
     color: var(--white);
+    @include tablet{
+      display: block;
+    }
   }
 
   .light-bar {
+    cursor: pointer;
+    color: var(--Paragraph);
+
     @include tablet {
       display: none;
     }
@@ -177,6 +184,8 @@
   }
 
   .icon-menu {
+    color: var(--Paragraph);
+
   }
 
   .header__ul_active {

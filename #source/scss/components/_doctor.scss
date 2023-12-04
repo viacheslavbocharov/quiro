@@ -1,5 +1,7 @@
 .doctor {
   padding-top: 111rem;
+  //position: sticky;
+  //top: 144rem;
 
   &__list {
     display: grid;
@@ -50,13 +52,13 @@
   }
 
   &__role {
-    color: var(--Text);
-    font: var(--c-text);
+    color: var(--c-text);
+    font: var(--Link);
   }
 
   &__desc {
-    color: var(--Text);
-    font: var(--c-text);
+    color: var(--c-text);
+    font: var(--Link);
     margin-bottom: 28rem;
   }
 
@@ -65,7 +67,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--c-terciary);
+    color: #F9F1FE;
     font: var(--Title);
     border-radius: 50px;
     background: var(--c-primary);

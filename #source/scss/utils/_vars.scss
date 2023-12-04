@@ -29,12 +29,18 @@ $mobile: 576px;
   --c-primary: #8842f0;
   --c-terciary: #f9f1fe;
   --c-text: #575757;
+  --c-background: #fff;
 
   --transition: 0.2s all ease-in-out;
 }
 
 html._theme:root {
-  --c-primary: rgb(37, 180, 44);
+  --c-background: #424245;
+  --c-terciary: #8d8392;
+  --Paragraph: #f5f2f2;
+  --c-text: #d9d4d4;
+
+
 }
 
 $--c-primary: var(--c-primary);
